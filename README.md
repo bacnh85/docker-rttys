@@ -12,6 +12,12 @@ This repo is to build rttys docker image.
 - Port 5912: listening to `rtty` client. This port should be exposed outside of your network to let clients connect to.
 - Port 5913: web interface port where use can do remote to client. This should be routed via Nginx proxy if you want to login to domain.
 
+## Environment
+
+- RTTYS_USERNAME: username to login RTTYS web
+- RTTYS_PASSWORD: password of `RTTYS_USERNAME` user
+- RTTYS_TOKEN: RTTYS token - client needs to have this token, in order to connect to RTTYS.
+
 ## Usage
 
 Docker-compose file:
